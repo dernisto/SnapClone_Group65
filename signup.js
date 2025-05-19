@@ -1,5 +1,6 @@
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
+import logoIcon from "../../assets/images/logo.png";
 import {
   Alert,
   Image,
@@ -39,7 +40,7 @@ export default function SignInScreen() {
             alt="App Logo"
             resizeMode="contain"
             style={styles.headerImg}
-            source={require('../assets/images/logo.png')}
+            source={logoIcon} // Call it with what you used to import it yh
           />
           <Text style={styles.title}>
             Sign in to <Text style={{ color: '#075eec' }}>MyApp</Text>
