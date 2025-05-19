@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoIcon from "../../assets/images/logo.png";
 import {
   StyleSheet,
   SafeAreaView,
@@ -47,7 +48,7 @@ export default function SignUpScreen({ navigation }) {
             alt="App Logo"
             resizeMode="contain"
             style={styles.headerImg}
-            source={require('../assets/logo.png')} // Updated to use local image
+            source={logoIcon} // import with the name used
           />
           <Text style={styles.title}>
             Sign up for <Text style={{ color: '#075eec' }}>MyApp</Text>
